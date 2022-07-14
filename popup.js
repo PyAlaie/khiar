@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         d = document;
   
         var f = d.createElement('form');
+        f.style.csstext = "position: absolute;margin-top:100px"
         f.action = 'http://gtmetrix.com/analyze.html?bm';
         f.method = 'post';
         var i = d.createElement('input');
@@ -18,3 +19,17 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }, false);
   }, false);
+
+  // document.querySelector('body').addEventListener('click', test)
+  //     function test()
+  //     {
+  //       alert('asdasd')
+  //     }
+
+    //   func tion myAlert(){
+    //     alert('hello world');
+    // }
+    
+    // document.addEventListener('DOMContentLoaded', function () {
+    //     document.querySelector('body').addEventListener('click', myAlert);
+    // });

@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
   
-    "name": "GTmetrix Analyzer Plugin",
-    "description": "This extension will analyze a page using GTmetrix",
+    "name": "Password God",
+    "description": "we do save your password",
     "version": "1.0",
   
     "browser_action": {
@@ -10,6 +10,14 @@
      "default_popup": "popup.html"
     },
     "permissions": [
-     "activeTab"
+     "activeTab",
+     "storage"
+     ],
+     "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "css": ["bg.css"],
+            "js": ["jsencrypt.min.js","crypto-js.min.js","core.js","bg.js"]
+        }
      ]
 }
